@@ -20,7 +20,7 @@ define(function(require, exports, module) {
             this.base();
 
             if (!this.options.contentType) {
-                this.options.contentType = "catalog:product";
+                this.options.contentType = "custom:county0";
             }
 
             this.options.dataSource = {
