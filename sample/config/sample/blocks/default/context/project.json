@@ -5,7 +5,7 @@
             "items": [{
                 "key": "catalog/header",
                 "title": "Catalog",
-                "order": 10000,
+                "order": 1,
                 "header": true,
                 "iconClass": "fa fa-dashboard",
                 "allowAuthority": ["manager"],
@@ -14,8 +14,8 @@
                 "rejectPermission": [],
                 "items": [{
                     "key": "sample/products",
-                    "title": "Products",
-                    "uri": "#/projects/{projectId}/products",
+                    "title": "Add Items",
+                    "uri": "#/additems",
                     "iconClass": "fa fa-pencil",
                     "allowPermission": [
                         "manager"
