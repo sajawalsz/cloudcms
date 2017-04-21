@@ -1,25 +1,27 @@
 {
     "evaluator": "context-project",
     "config": {
-        "blocks": [{
-            "evaluator": "uri-match",
-            "condition": "/",
-            "config": {
-                "context": {
-                    "items": [{
-                        "key": "platform/resources",
-                        "items": [{
-                            "key": "platform/custompage",
-                            "title": "Custom Page",
-                            "uri": "#/custom",
-                            "iconClass": "fa fa-smile-o",
-                            "allowPermission": [
-                                "read"
-                            ]            
-                        }]
-                    }]
-                }                
-            }
-        }]
+        "context": {
+            "items": [{
+                "key": "catalog/header",
+                "title": "Catalog",
+                "order": 10000,
+                "header": true,
+                "iconClass": "fa fa-dashboard",
+                "allowAuthority": ["manager"],
+                "allowPermission": ["read"],
+                "rejectAuthority": [],
+                "rejectPermission": [],
+                "items": [{
+                    "key": "sample/products",
+                    "title": "Productsssss",
+                    "uri": "#/projects/{projectId}/products",
+                    "iconClass": "fa fa-pencil",
+                    "allowPermission": [
+                        "manager"
+                    ]
+                }]
+            }]
+        }
     }
 }
