@@ -15,7 +15,7 @@
                 "items": [{
                     "key": "sample/products",
                     "title": "Productsssss",
-                    "uri": "#/projects",
+                    "uri": "#/projects/{projectId}/products",
                     "iconClass": "fa fa-pencil",
                     "allowPermission": [
                         "manager"
