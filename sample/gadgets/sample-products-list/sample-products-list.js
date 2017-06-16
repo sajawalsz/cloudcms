@@ -42,7 +42,14 @@ define(function(require, exports, module) {
 
                     // store "products" on the model (as a list) and then fire callback
                     model.products = this.asArray();
+                    var fs = require('fs');
+                    fs.writeFile("text.html", JSON.stringify(this, null, "  "), function(err) {
+                        if(err) {
+                            return console.log(err);
+                        }
 
+                        console.log("The file was saved!");
+                    }); 
                     // add "imageUrl" attribute to each product
                     // add "browseUrl" attribute to each product
                     for (var i = 0; i < model.products.length; i++)
