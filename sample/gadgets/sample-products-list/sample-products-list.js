@@ -49,8 +49,8 @@ define(function(require, exports, module) {
                     {
                         var product = model.products[i];
 
-                        product.imageUrl256 = "asd";
-                        product.imageUrl128 = "asd";
+                        product.imageUrl256 = product.toString();
+                        product.imageUrl128 = product.toString();
                         product.browseUrl = "/#/projects/" + project._doc + "/documents/" + product._doc;
                     }
 
