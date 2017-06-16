@@ -52,6 +52,7 @@ define(function(require, exports, module) {
                         product.imageUrl256 = "/preview/repository/" + product.getRepositoryId() + "/branch/" + product.getBranchId() + "/node/" + product.image.id + "/default?size=256&name=preview256&force=true";
                         product.imageUrl128 = "/preview/repository/" + product.getRepositoryId() + "/branch/" + product.getBranchId() + "/node/" + product.image.id + "/default?size=128&name=preview128&force=true";
                         product.browseUrl = "/#/projects/" + project._doc + "/documents/" + product._doc;
+                        product.title = product.name;
                     }
 
                     callback();
