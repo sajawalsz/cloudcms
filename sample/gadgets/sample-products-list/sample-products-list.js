@@ -48,9 +48,9 @@ define(function(require, exports, module) {
                     for (var i = 0; i < model.products.length; i++)
                     {
                         var product = model.products[i];
-
-                        product.imageUrl256 = product.toString();
-                        product.imageUrl128 = product.toString();
+                        console.log(product);
+                        product.imageUrl256 = "/preview/repository/" + product.getRepositoryId() + "/branch/" + product.getBranchId() + "/node/" + product.getId() + "/default?size=256&name=preview256&force=true";
+                        product.imageUrl128 = "/preview/repository/" + product.getRepositoryId() + "/branch/" + product.getBranchId() + "/node/" + product.getId() + "/default?size=128&name=preview128&force=true";
                         product.browseUrl = "/#/projects/" + project._doc + "/documents/" + product._doc;
                     }
 
