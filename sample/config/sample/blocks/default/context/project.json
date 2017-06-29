@@ -15,7 +15,7 @@
                 "items": [{
                     "key": "sample/products",
                     "title": "Create Page",
-                    "uri": "#/projects/6863b6709f29abc2f94f/products",
+                    "uri": "#/projects/{projectId}/products",
                     "iconClass": "fa fa-pencil",
                     "allowPermission": [
                         "manager"
