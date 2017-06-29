@@ -14,7 +14,7 @@
                 "rejectPermission": [],
                 "items": [{
                     "key": "sample/products",
-                    "title": "Productsssss",
+                    "title": "Create Page",
                     "uri": "#/projects/{projectId}/products",
                     "iconClass": "fa fa-pencil",
                     "allowPermission": [
