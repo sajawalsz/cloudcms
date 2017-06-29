@@ -1,6 +1,6 @@
 {
     "title": "Create Page",
-    "uri": "/projects/{projectId}/products",
+    "uri": "/projects/6863b6709f29abc2f94f/products",
     "extends": "project/_project",
     "template": "sample-template"
 }
